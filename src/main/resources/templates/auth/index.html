@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <form th:action="@{/login}" th:method="POST" th:object="${loginRequest}">
+        <input type="text" placeholder="username" th:field="*{username}" />
+        <input type="text" placeholder="password" th:field="*{password}" />
+        <button type="submit">login</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layout/main}"
+>
+  <head>
+    <title>SIBKM</title>
+  </head>
+  <body>
+    <!-- Content -->
+    <section class="ms-5 mt-3" layout:fragment="content">
+      <h1 class="fw-bold">Welcome <span th:text="${name}"></span>...</h1>
+    </section>
+  </body>
+</html>
